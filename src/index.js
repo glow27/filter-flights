@@ -4,7 +4,6 @@ import App from './App';
 import {FlightsContext} from './context'
 import data from './flights.json'
 
-
 ReactDOM.render(
   <React.StrictMode>
     <FlightsContext.Provider value={data.result.flights}>

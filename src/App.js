@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState, useRef } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import './App.css';
-import { Card } from './components/card';
+import { Card } from './card';
 import { FlightsContext } from './context';
 
 function App() {
@@ -22,15 +22,6 @@ function App() {
     { name: 'Аэрофлот - российские авиалинии', status: false },
     { name: 'TURK HAVA YOLLARI A.O.', status: false },
   ]);
-
-  // function usePrevious(value) {
-  //   const ref = useRef();
-  //   useEffect(() => {
-  //     ref.current = value;
-  //   });
-  //   return ref.current;
-  // }
-  // console.log(flights);
 
   const handleClick = () => {
     setAirlines([
